@@ -16,13 +16,13 @@ Tener instaldo NPM arriba de su versión 5.2.0
 
 En la consola de comandos, ejecutar el siguiente comando. El proceso tardará unos minutos en descargar e instalar todo lo necesario.
 
-`npx create-react-app hello-world`
+`npx create-react-app simplereactapp`
 
 ## Ejecutar la aplicación 
 
-Ir al directorio hello-world:
+Ir al directorio simplereactapp:
 
-`cd hello-world`
+`cd simplereactapp`
 
 Correr la aplicación con el siguiente comando:
 
@@ -36,6 +36,8 @@ Enseguida se abrirá tú navegador en el siguiente link (host):
 ## Subir la aplicación a GitHub
 
 Es necesario subir el código a GitHub para poder integrarlo con el servicio de AWS, en el paso siguiente. El alcance de este tutorial no cubré este punto.
+
+Nota: Git dejó de usar password recientemente para subir cambios, es muy probable que tengas que crear un Personal AccessToken para subir tus cambios. Esta opción se encuentra en Configuración o Settings > Developer settings > Personal Access Token.
 
 
 
