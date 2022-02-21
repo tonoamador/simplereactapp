@@ -1,7 +1,5 @@
 # Despliege de una aplicación de REACT en AWS
 
-aaa
-
 ## Prerrequisitos
 
 [Descargar e instalar Node.J](https://nodejs.org/en/download/)  
@@ -45,18 +43,29 @@ Nota: Git dejó de usar password recientemente para subir cambios, es muy probab
 
 ### Desplegar la aplicación React en AWS Amplify
 
-1) Iniciar sesión en [AWS Console](https://aws.amazon.com/es/)
-2) Buscar el servicio **AWS Amplify**
-3) Expandir el menú y dar clic en **Todas las aplicaciones**
-4) clic en **Nueva aplicación>>Alojar aplicación web**
-5) Seleccionar la opción de **GitHub** y clic en **Continuar**
+1) Iniciar sesión en [AWS Console](https://aws.amazon.com/es/)  
+2) Buscar el servicio **AWS Amplify**  
+![AWS Amplify>Todas las aplicaciones](/img/aws_amplify.jpg)  
+3) Expandir el menú y dar clic en **Todas las aplicaciones**  
+![AWS Amplify>Todas las aplicaciones](/img/todas_las_aplicaciones.jpg)  
+4) clic en **Nueva aplicación>>Alojar aplicación web**  
+![AWS Amplify>Todas las aplicaciones](/img/alojar_aplicacion.jpg)
+5) Seleccionar la opción de **GitHub** y clic en **Continuar**  
+![AWS Amplify>Todas las aplicaciones](/img/opcion_git_hub.jpg)
 6) Establecer y autorizar la conexión con el repositorio de GitHub
     6.1) Clic en **Authorize aws-amplify-console**
     6.2)Introducir las credenciales del repositorio requeridas
 7) Seleccionar el repositorio donde desplegaron su código, Ejemplo: **java-in-action/simplereactapp** 
+![Seleccionar Repositorio](/img/seleccionar_repo.jpg)
 8) Aceptar los valores por defecto y clic en **Siguiente**
 9) Dar clic en **Guardar e implementar**
-Nota: El proceso tardara unos minutos. Esperar a que los siguientes pasos cambien verde: Aprovisionar, Compilar, Implementar y Verificar.
+![Guardar e Implementar](/img/guardar_implementar.jpg)
+Nota: El proceso tardara unos minutos. Esperar a que los siguientes pasos cambien verde: Aprovisionar, Compilar, Implementar y Verificar.  
+Estado inicial:
+![Paso inicial, aprovisionar](/img/paso_aprovisionar.jpg)  
+Estafo final:
+![Paso finar, verificar](/img/paso_fina_verificar.jpg)
+
 10) Identificar la url donde se desplego la aplicación (caudro rojo) y abrirla, ejemplo: https://main.d2de214va3s2xg.amplifyapp.com/
 
 ### Lanzar el proceso de integración continua
