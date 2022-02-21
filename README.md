@@ -47,23 +47,25 @@ Nota: Git dejó de usar password recientemente para subir cambios, es muy probab
 
 1) Iniciar sesión en [AWS Console](https://aws.amazon.com/es/)
 2) Buscar el servicio **AWS Amplify**
-3) En la sección de Amplify Hosting, clic en **Introducción**
-4) Seleccionamos la opción de **GitHub**
-   Nota: La consola de Amplify requiere acceso de solo lectura al repositorio.
-5) Clic en el botón **Continuar**
-6) Clic en **Implementar aplicación**
-7) Clic en **Conectarse a GitHub**
-8) Clic en **Authorize aws-amplify-console**
-    Nota: Se solicitarán las credenciales (el usuario y/o password) para continuar.
-9) Crear **rol de servicio**, clic en **Crear un nuevo rol**
-    9.1) Dejar seleccionado **Servicio de AWS**
-    9.2) En el catálogo Casos de uso para otros servicios de AWS buscar y seleccionar  **Amplify**
-    9.3) Seleccionar la opción **Amplify - Backend Deployment** y click en **Siguiente**
-    9.4) Aceptar los valores por default y dar un nombre al rol, como: **AmplifyConsoleServiceRole-AmplifyRole**
-10) Regresar a la pantalla de Implementación de la aplicación y dar clic en **Actualizar Roles Existente**
-11) Seleccionar el rol creado y dar clic en **Guardar e Implementar**
+3) Expandir el menú y dar clic en **Todas las aplicaciones**
+4) clic en **Nueva aplicación>>Alojar aplicación web**
+5) Seleccionar la opción de **GitHub** y clic en **Continuar**
+6) Establecer y autorizar la conexión con el repositorio de GitHub
+    6.1) Clic en **Authorize aws-amplify-console**
+    6.2)Introducir las credenciales del repositorio requeridas
+7) Seleccionar el repositorio donde desplegaron su código, Ejemplo: **java-in-action/simplereactapp** 
+8) Aceptar los valores por defecto y clic en **Siguiente**
+9) Dar clic en **Guardar e implementar**
+Nota: El proceso tardara unos minutos. Esperar a que los siguientes pasos cambien verde: Aprovisionar, Compilar, Implementar y Verificar.
+10) Identificar la url donde se desplego la aplicación (caudro rojo) y abrirla, ejemplo: https://main.d2de214va3s2xg.amplifyapp.com/
 
-
+### Lanzar el proceso de integración continua
+1) Hacer un cambio al archivo **src/App.js**.
+2) Subir el cambio al repositorio con consola, plugin de IDE o directo en GitHub.
+Ejemplo:
+`git add .`  
+`git commit -m"Cambio que lanza el proceso de despliege en Amplify"`  
+`git push origin main`
 
 
    
