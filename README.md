@@ -35,9 +35,40 @@ Enseguida se abrirá tú navegador en el siguiente link (host):
 
 ## Subir la aplicación a GitHub
 
-Es necesario subir el código a GitHub para poder integrarlo con el servicio de AWS, en el paso siguiente. El alcance de este tutorial no cubré este punto.
+Se recomienda subir el código creado en el paso anterior a su GitHub para poder integrarlo con el servicio de AWS, en el paso siguiente. El alcance de este tutorial no cubré la explicación de como subir el código al repositorio.
+
+En caso de que se queira omitir este paso, se puede utilizar el siguiente url: 
+https://github.com/java-in-action/simplereactapp.git en el siguiente paso.
 
 Nota: Git dejó de usar password recientemente para subir cambios, es muy probable que tengas que crear un Personal AccessToken para subir tus cambios. Esta opción se encuentra en Configuración o Settings > Developer settings > Personal Access Token.
+
+
+### Desplegar la aplicación React en AWS Amplify
+
+1) Iniciar sesión en [AWS Console](https://aws.amazon.com/es/)
+2) Buscar el servicio **AWS Amplify**
+3) En la sección de Amplify Hosting, clic en **Introducción**
+4) Seleccionamos la opción de **GitHub**
+   Nota: La consola de Amplify requiere acceso de solo lectura al repositorio.
+5) Clic en el botón **Continuar**
+6) Clic en **Implementar aplicación**
+7) Clic en **Conectarse a GitHub**
+8) Clic en **Authorize aws-amplify-console**
+    Nota: Se solicitarán las credenciales (el usuario y/o password) para continuar.
+9) Crear **rol de servicio**, clic en **Crear un nuevo rol**
+    9.1) Dejar seleccionado **Servicio de AWS**
+    9.2) En el catálogo Casos de uso para otros servicios de AWS buscar y seleccionar  **Amplify**
+    9.3) Seleccionar la opción **Amplify - Backend Deployment** y click en **Siguiente**
+    9.4) Aceptar los valores por default y dar un nombre al rol, como: **AmplifyConsoleServiceRole-AmplifyRole**
+10) Regresar a la pantalla de Implementación de la aplicación y dar clic en **Actualizar Roles Existente**
+11) Seleccionar el rol creado y dar clic en **Guardar e Implementar**
+
+
+
+
+   
+
+ Dejar los valores por defecto y dar clic en **Guardar e implementar**
 
 
 
