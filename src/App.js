@@ -8,6 +8,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Demostración: Aplicación hecha en React desplegada en AWS
+        </p>
+        <p>
           <code> Mi Nombre </code>.
         </p>
         <a

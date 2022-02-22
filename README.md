@@ -1,4 +1,4 @@
-# Despliege de una aplicación de React en AWS
+# Despliege de una aplicación de React en AWS Amplify
 
 ## Prerrequisitos
 
@@ -39,31 +39,39 @@ Nota: El proceso tardara unos minutos. Esperar a que los siguientes pasos cambie
 Estado inicial:
 ![Paso inicial, aprovisionar](/img/paso_aprovisionar.jpg)  
 Estafo final:
-![Paso finar, verificar](/img/paso_fina_verificar.jpg)
-
+![Paso final, verificar](/img/paso_fina_verificar.jpg)
 10) Identificar la url donde se desplego la aplicación (caudro rojo) y abrirla, ejemplo: https://main.d2de214va3s2xg.amplifyapp.com/
+![Ejemplo de aplicación desplegada](/img/reac_app_desplegada.png)
+
 
 ### Lanzar el proceso de integración continua
-1) Hacer la siguiente modificación en el archivo **src/App.js**, directamente en GitHub: Remplacen con su nombre el texto "Mi Nombre".
+1) Hacer la siguiente modificación en el archivo **simplereactapp/src/App.js**, directamente en GitHub: Remplacen con su nombre el texto "Mi Nombre".
+![Ejemplo de aplicación desplegada](/img/edit_file_in_gh.jpg)
+2) Ir a la consola de Amplify y observar el "Pipeline" la línea de producción. Esperar que cada paso se complete (en verde).
+3) Refrescar la url de la aplicación en AWS. https://main.d2de214va3s2xg.amplifyapp.com/, para comprobar que el cambio se ha desplegado correctamente.
 
-3) Ir a la consola de Amplify y observar el "Pipeline" la línea de producción.
-4) Esperar que cada paso se complete (en verde) e refrescar la url de despliege Ej. https://main.d2de214va3s2xg.amplifyapp.com/, para comprobar que el cambio se ha desplegado correctamente.
+### Eliminar la aplicación
 
+AWS te permite usar sus servicios en un modelo llamado "Free Tier", el cual nos permite usarlos por un tiempo para aprender y probarlos. Llegado el límite del consumo, dependiendo del servicio, te empezara a cobrar a tu tarjeta de crédito.
+
+Es por eso que al termino de este tutorial, les recomendamos eliminar la aplicación desplegada en Amplify para no incurrir en costos.
+
+1) Abrir Amplify
+2) Seleccionar la aplicación: simplereactapp
+3) Clic en el botón Acciones > Eliminar aplicación
+![Eliminar app al final de este tutorial](/img/eliminar_app.jpg)
 
 ## Conclusión
 Este tutorial enseña como desplegar una aplicación de front-end hecha en react en un servicio de AWS Amplify. El reto esta en configurar el repositorio de gitHub con AWS Amplify. 
 
 Lo interesante de este simple ejercicio, es entender como AWS nos ofrece un servicio que automatiza todo el proceso de despliege e integra un proveedor de repositorio de código (GitHub). 
 
+
 ### Referencias
 
-[Download Node.Js](https://nodejs.org/en/download/)  
-[Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-[Install Git](https://github.com/git-guides/install-git)  
-[How to install Git Bash in Windows](https://www.educative.io/edpresso/how-to-install-git-bash-in-windows)  
 [AWS Amplify](https://aws.amazon.com/es/amplify/)  
-[What are the differences between npm and npx ?](https://www.geeksforgeeks.org/what-are-the-differences-between-npm-and-npx/#:~:text=NPX%3A%20The%20npx%20stands%20for,without%20even%20installing%20that%20package.)  
 [Pushing changes to GitHub](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github)
+[Free Tier](https://aws.amazon.com/es/free/)
 
 
 
