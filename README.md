@@ -41,7 +41,7 @@ Estado inicial:
 Estafo final:
 ![Paso final, verificar](/img/paso_fina_verificar.jpg)
 10) Identificar la url donde se desplego la aplicación (caudro rojo) y abrirla, ejemplo: https://main.d2de214va3s2xg.amplifyapp.com/
-![Ejemplo de aplicación desplegada](/img/reac_app_desplegada.png)
+![Ejemplo de aplicación desplegada](/img/react_app_desplegada.png)
 
 
 ### Lanzar el proceso de integración continua
@@ -58,7 +58,7 @@ Es por eso que al termino de este tutorial, les recomendamos eliminar la aplicac
 
 1) Abrir Amplify
 2) Seleccionar la aplicación: simplereactapp
-3) Clic en el botón Acciones > Eliminar aplicación
+3) Clic en el botón Acciones > Eliminar aplicación  
 ![Eliminar app al final de este tutorial](/img/eliminar_app.jpg)
 
 ## Conclusión
@@ -70,7 +70,7 @@ Lo interesante de este simple ejercicio, es entender como AWS nos ofrece un serv
 ### Referencias
 
 [AWS Amplify](https://aws.amazon.com/es/amplify/)  
-[Pushing changes to GitHub](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github)
+[Pushing changes to GitHub](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github)  
 [Free Tier](https://aws.amazon.com/es/free/)
 
 
