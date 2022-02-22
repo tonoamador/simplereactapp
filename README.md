@@ -2,8 +2,8 @@
 
 ## Prerrequisitos
 
-[Descargar e instalar Node.J](https://nodejs.org/en/download/)  
-Tener instaldo NPM arriba de su versión 5.2.0
+[Descargar e instalar Node.JS](https://nodejs.org/en/download/)  
+Al instalar node se instala NPM. Si ya lo tienes instalado confirma que la versió es arriba de su versión 5.2.0
 
 [Instalar Git en la máquina local](https://github.com/git-guides/install-git). Se tiene que tener instalado Git. Se recomienda instalar una consola de comandos como [Git Bash](https://www.educative.io/edpresso/how-to-install-git-bash-in-windows)
 
