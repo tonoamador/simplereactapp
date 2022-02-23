@@ -40,7 +40,7 @@ Estado inicial:
 ![Paso inicial, aprovisionar](/img/paso_aprovisionar.jpg)  
 Estafo final:
 ![Paso final, verificar](/img/paso_fina_verificar.jpg)
-10) Identificar la url donde se desplego la aplicación (caudro rojo) y abrirla, ejemplo: https://main.d2de214va3s2xg.amplifyapp.com/
+10) Identificar la url donde se desplego la aplicación (caudro rojo) y abrirla, ejemplo: https://main.d2de214va3s2xg.amplifyapp.com/  
 ![Ejemplo de aplicación desplegada](/img/react_app_desplegada.png)
 
 
